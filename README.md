@@ -33,3 +33,25 @@ Open `mixedsignalBoard.kicad_pro` with KiCad 9 to inspect the schematic and layo
 ## Before fabrication
 
 This is a design project, not a validated hardware product. Check the actual LCD module pinout and connector orientation, antenna matching and 50-ohm RF geometry against the chosen fabricator's stackup, and all component part numbers before ordering. The PCB currently assigns both inner copper zones to `M95_SIM_GND` and records an approximately 3.0 mm stackup; verify that these are intentional and manufacturable. Passing ERC or DRC alone does not establish electrical, RF, or functional performance.
+
+## Design gallery
+
+### Schematic
+
+![Complete KiCad schematic](images/schematic.png)
+
+### PCB layout
+
+| Front copper view | Multi-layer routing view |
+| --- | --- |
+| <img src="images/pcb-front-copper.png" alt="Front copper layout" width="430"> | <img src="images/pcb-routing.png" alt="Multi-layer PCB routing" width="430"> |
+
+### 3D renders
+
+| Component side | Keypad side |
+| --- | --- |
+| <img src="images/pcb-front-3d.png" alt="3D render of the component side" width="430"> | <img src="images/pcb-back-3d.png" alt="3D render of the keypad side" width="430"> |
+
+| Perspective view | Board edge profile |
+| --- | --- |
+| <img src="images/pcb-perspective-3d.png" alt="Perspective 3D render" width="430"> | <img src="images/pcb-side-3d.png" alt="Board edge profile render" width="430"> |
