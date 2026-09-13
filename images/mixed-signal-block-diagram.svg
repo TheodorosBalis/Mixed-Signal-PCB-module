@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1370" viewBox="0 0 1800 1370" role="img" aria-labelledby="title desc">
+<title id="title">Mixed-Signal PCB Module - System Block Diagram</title>
+<desc id="desc">Block diagram derived from the KiCad schematic. A BQ24166 charger supplies the M95 and a TC2014 3.3 volt regulator. The STM32 connects to the display, SWD connector, crystal, keypad and power key logic. The M95 connects to the SIM, RF matching and external antenna, microphone, speaker, and status LEDs. Resistor networks and a PWRKEY transistor connect the MCU and GSM module.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#161616"/></marker></defs>
+<rect width="1800" height="1370" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="24" y="24" width="1752" height="1322" fill="white" stroke="#777777" stroke-width="1" />
+<text x="70" y="84" font-size="26" fill="#161616" text-anchor="start" font-weight="700" font-style="normal">MIXED-SIGNAL PCB MODULE</text>
+<text x="70" y="117" font-size="20" fill="#161616" text-anchor="start" font-weight="400" font-style="normal">Hardware architecture / 46 x 100 mm / four copper layers</text>
+<rect x="1108" y="55" width="619" height="100" fill="white" stroke="#073ded" stroke-width="4" />
+<rect x="1117" y="64" width="619" height="100" fill="white" stroke="#073ded" stroke-width="4" />
+<text x="1420" y="108" font-size="37" fill="#007f84" text-anchor="middle" font-weight="700" font-style="italic">MIXED SIGNAL PCB</text>
+<text x="1420" y="139" font-size="19" fill="#007f84" text-anchor="middle" font-weight="700" font-style="normal">SYSTEM BLOCK DIAGRAM</text>
+<text x="70" y="160" font-size="17" fill="#555555" text-anchor="start" font-weight="700" font-style="normal">POWER DISTRIBUTION</text>
+<rect x="70" y="185" width="220" height="85" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="180" y="220.5" font-size="23" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">MICRO-USB</text>
+<text x="180" y="248.5" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">J3 / power input</text>
+<rect x="70" y="310" width="220" height="85" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="180" y="345.5" font-size="23" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">BATTERY</text>
+<text x="180" y="373.5" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">J1 / 2-pin connector</text>
+<rect x="410" y="185" width="275" height="210" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="547.5" y="269" font-size="20" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">CHARGER / POWER PATH</text>
+<text x="547.5" y="297" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">BQ24166RGE</text>
+<text x="547.5" y="325" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">U4 + L1 / output filter</text>
+<polyline points="290,227 410,227" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="350" y="213" font-size="19" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">VBUS</text>
+<polyline points="290,352 410,352" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="350" y="338" font-size="19" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">BAT</text>
+<rect x="820" y="185" width="230" height="85" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="935" y="220.5" font-size="21" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">3.3 V REGULATOR</text>
+<text x="935" y="248.5" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">TC2014 / U3</text>
+<polyline points="685,227 820,227" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="752" y="213" font-size="19" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">sys_load</text>
+<polyline points="750,227 750,380 1140,380" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<circle cx="750" cy="227" r="4.2" fill="#161616"/>
+<text x="1010" y="364" font-size="19" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">sys_load</text>
+<text x="1170" y="387" font-size="19" fill="#161616" text-anchor="start" font-weight="400" font-style="normal">M95 VBAT + LEDs</text>
+<polyline points="1050,227 1280,227" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="1165" y="213" font-size="19" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">3.3V_MCU</text>
+<text x="1165" y="255" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">MCU / LCD / SWD</text>
+<polyline points="935,325 935,270" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="935" y="349" font-size="19" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">REG_EN</text>
+<rect x="1440" y="310" width="275" height="85" fill="white" stroke="#161616" stroke-width="2.5" stroke-dasharray="9 6"/>
+<text x="1577.5" y="345.5" font-size="22" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">EXTERNAL ANTENNA</text>
+<text x="1577.5" y="373.5" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">GSM / GPRS</text>
+<polyline points="1577,500 1577,395" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="1595" y="450" font-size="19" fill="#073ded" text-anchor="start" font-weight="400" font-style="italic">coax</text>
+<text x="70" y="457" font-size="17" fill="#555555" text-anchor="start" font-weight="700" font-style="normal">CONTROL &amp; COMMUNICATION</text>
+<rect x="490" y="500" width="280" height="660" fill="white" stroke="#161616" stroke-width="2.5" />
+<rect x="1050" y="500" width="280" height="660" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="630" y="689" font-size="34" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">MCU</text>
+<text x="630" y="725" font-size="24" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">STM32G030K6Tx</text>
+<text x="630" y="757" font-size="20" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">U2</text>
+<text x="630" y="986" font-size="21" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">User interface</text>
+<text x="630" y="1018" font-size="20" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">GPIO / SPI / USART</text>
+<text x="1190" y="689" font-size="32" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">GSM / GPRS</text>
+<text x="1190" y="727" font-size="27" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">Quectel M95</text>
+<text x="1190" y="759" font-size="20" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">U1</text>
+<text x="1190" y="986" font-size="20" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">Cellular communication</text>
+<text x="1190" y="1018" font-size="20" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">SIM / RF / analog audio</text>
+<polyline points="630,467 630,500" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="630" y="453" font-size="19" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">3.3V_MCU</text>
+<polyline points="1190,467 1190,500" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="1190" y="453" font-size="19" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">sys_load / VBAT</text>
+<rect x="70" y="500" width="270" height="90" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="205" y="524" font-size="23" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">LCD DISPLAY</text>
+<text x="205" y="552" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">ST7789 / 240 x 240</text>
+<text x="205" y="580" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">J4 / 12-pin FPC</text>
+<polyline points="490,545 340,545" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="415" y="531" font-size="18" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">SPI + control</text>
+<rect x="70" y="635" width="270" height="90" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="205" y="659" font-size="23" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">DEBUG CONNECTOR</text>
+<text x="205" y="687" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">Tag-Connect / J2</text>
+<text x="205" y="715" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">SWD programming</text>
+<polyline points="340,680 490,680" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="415" y="666" font-size="18" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">SWD / NRST</text>
+<rect x="70" y="770" width="270" height="90" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="205" y="808" font-size="21" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">LOW-SPEED CRYSTAL</text>
+<text x="205" y="836" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">Y1 / load capacitors</text>
+<polyline points="340,815 490,815" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round"  />
+<text x="415" y="801" font-size="18" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">PC14 / PC15</text>
+<rect x="70" y="905" width="270" height="90" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="205" y="929" font-size="23" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">KEYPAD MATRIX</text>
+<text x="205" y="957" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">19 scan keys</text>
+<text x="205" y="985" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">5 rows / 4 columns</text>
+<polyline points="340,950 490,950" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="415" y="936" font-size="18" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">GPIO scan</text>
+<rect x="70" y="1060" width="270" height="100" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="205" y="1089" font-size="21" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">POWER KEY / HOLD</text>
+<text x="205" y="1117" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">SW13 / D8 / D9</text>
+<text x="205" y="1145" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">Key sense divider</text>
+<polyline points="340,1110 490,1110" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="415" y="1081" font-size="17" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">PWR_HOLD</text>
+<text x="415" y="1101" font-size="17" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">KEY_SENSE</text>
+<polyline points="205,1160 205,1194" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="205" y="1220" font-size="19" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">REG_EN to U3</text>
+<rect x="815" y="800" width="190" height="160" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="910" y="859" font-size="17" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">UART + CONTROL</text>
+<text x="910" y="887" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">Resistor networks</text>
+<text x="910" y="915" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">PWRKEY driver Q1</text>
+<polyline points="770,880 815,880" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<polyline points="1005,880 1050,880" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="910" y="753" font-size="20" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">TX / RX</text>
+<text x="910" y="779" font-size="18" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">DTR / RI / PWRKEY</text>
+<rect x="1440" y="500" width="275" height="90" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="1577.5" y="524" font-size="22" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">RF MATCH + U.FL</text>
+<text x="1577.5" y="552" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">R5 / C16 / C17 / J6</text>
+<text x="1577.5" y="580" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">R5: 0 ohm; C16/17: DNP</text>
+<polyline points="1330,545 1440,545" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="1385" y="531" font-size="17" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">RF_ANT</text>
+<rect x="1440" y="635" width="275" height="90" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="1577.5" y="659" font-size="23" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">NANO-SIM</text>
+<text x="1577.5" y="687" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">J5 / series resistors</text>
+<text x="1577.5" y="715" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">D3 protection + capacitors</text>
+<polyline points="1330,680 1440,680" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="1385" y="651" font-size="17" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">SIM bus</text>
+<text x="1385" y="672" font-size="16" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">+ VDD</text>
+<rect x="1440" y="770" width="275" height="90" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="1577.5" y="794" font-size="23" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">MICROPHONE</text>
+<text x="1577.5" y="822" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">MK1</text>
+<text x="1577.5" y="850" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">RF filtering + ESD</text>
+<polyline points="1440,815 1330,815" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="1385" y="801" font-size="17" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">MIC1P/N</text>
+<rect x="1440" y="905" width="275" height="90" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="1577.5" y="929" font-size="23" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">SPEAKER</text>
+<text x="1577.5" y="957" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">LS1</text>
+<text x="1577.5" y="985" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">RF filtering + ESD</text>
+<polyline points="1330,950 1440,950" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="1385" y="936" font-size="17" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">SPK1P/N</text>
+<rect x="1440" y="1060" width="275" height="100" fill="white" stroke="#161616" stroke-width="2.5" />
+<text x="1577.5" y="1089" font-size="23" fill="#161616" text-anchor="middle" font-weight="700" font-style="normal">STATUS LEDs</text>
+<text x="1577.5" y="1117" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">D1 / D2</text>
+<text x="1577.5" y="1145" font-size="18" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">Q3 / Q4 drivers</text>
+<polyline points="1330,1110 1440,1110" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round" marker-end="url(#arrow)" />
+<text x="1385" y="1081" font-size="16" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">NETLIGHT</text>
+<text x="1385" y="1101" font-size="16" fill="#073ded" text-anchor="middle" font-weight="400" font-style="italic">/ STATUS</text>
+<text x="70" y="1263" font-size="18" fill="#555555" text-anchor="start" font-weight="400" font-style="normal">Power rails and REG_EN connect by name. Ground and decoupling are omitted for clarity.</text>
+<text x="70" y="1312" font-size="18" fill="#161616" text-anchor="start" font-weight="400" font-style="normal">Source: mixedsignalBoard.kicad_sch / KiCad 9</text>
+<rect x="1070" y="1287" width="665" height="43" fill="white" stroke="#161616" stroke-width="1.3" />
+<polyline points="1550,1287 1550,1330" fill="none" stroke="#161616" stroke-width="2.3" stroke-linejoin="round"  />
+<text x="1310" y="1315" font-size="20" fill="#007f84" text-anchor="middle" font-weight="700" font-style="normal">MIXED-SIGNAL PCB / Block diagram</text>
+<text x="1642" y="1315" font-size="19" fill="#161616" text-anchor="middle" font-weight="400" font-style="normal">Sheet 1 / 1</text>
+</g></svg>

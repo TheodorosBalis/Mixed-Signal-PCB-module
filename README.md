@@ -36,7 +36,15 @@ This is a design project, not a validated hardware product. Check the actual LCD
 
 ## Design gallery
 
-The views below show the complete schematic, PCB routing, and both sides of the board. The 3D images are KiCad renders, not photographs of fabricated hardware.
+The views below show the system block diagram, complete schematic, PCB routing, and both sides of the board. The 3D images are KiCad renders, not photographs of fabricated hardware.
+
+### System block diagram
+
+The diagram summarizes power distribution and the connections between the STM32, M95, display, keypad, SIM, RF, and audio circuits.
+
+![Mixed-signal PCB system block diagram](images/mixed-signal-block-diagram.png)
+
+[High-resolution PNG](images/mixed-signal-block-diagram.png) | [Editable SVG](images/mixed-signal-block-diagram.svg)
 
 ### Schematic
 
