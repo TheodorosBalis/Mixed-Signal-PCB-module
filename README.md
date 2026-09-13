@@ -36,6 +36,8 @@ This is a design project, not a validated hardware product. Check the actual LCD
 
 ## Design gallery
 
+The views below show the complete schematic, PCB routing, and both sides of the board. The 3D images are KiCad renders, not photographs of fabricated hardware.
+
 ### Schematic
 
 ![Complete KiCad schematic](images/schematic.png)
